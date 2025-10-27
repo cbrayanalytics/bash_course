@@ -1,0 +1,211 @@
+{
+  "main": {
+    "id": "e26993368d1b2914",
+    "type": "split",
+    "children": [
+      {
+        "id": "cd74f91fc2c69f0e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9b7826460226b1c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Week 1 - Foundations & Core Concepts/Day 3 - User Input & Read Command.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Day 3 - User Input & Read Command"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f85cf762804cdaa9",
+    "type": "split",
+    "children": [
+      {
+        "id": "5b34cdac1fe9b28b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3594e0ac99787cfa",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8a65353ac5cae956",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "Practice Project",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "c7c3cbd0660d114f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 283
+  },
+  "right": {
+    "id": "b5bb826d70a76c75",
+    "type": "split",
+    "children": [
+      {
+        "id": "c1617a6f45a93a14",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da193d11a0c55da4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Week 1 - Foundations & Core Concepts/Day 3 - User Input & Read Command.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Day 3 - User Input & Read Command"
+            }
+          },
+          {
+            "id": "c67ef77669723f33",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Week 1 - Foundations & Core Concepts/Day 3 - User Input & Read Command.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Day 3 - User Input & Read Command"
+            }
+          },
+          {
+            "id": "d2533c2d69d2967a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "c9c13614aa07af03",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Week 1 - Foundations & Core Concepts/Day 3 - User Input & Read Command.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Day 3 - User Input & Read Command"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "9b7826460226b1c4",
+  "lastOpenFiles": [
+    "Week 1 - Foundations & Core Concepts/Day 2 - Variables & Data Types.md",
+    "Exercises/Environment Info Script.md",
+    "Week 1 - Foundations & Core Concepts/Day 1 - Environment Setup & First Script.md",
+    "Exercises/Export Variables and Demonstrate Scope Differences.md",
+    "Exercises/Calculate and Display Script Runtime Using Special Variables.md",
+    "Exercises/Store and Display Variable Types.md",
+    "Exercises/System Welcome Banner.md",
+    "Exercises/system information.md",
+    "Exercises/add to path.md",
+    "Exercises/hello world.md",
+    "Improvements.md",
+    "Exercises/Error Conditions.md",
+    "Exercises/Code Search Tool.md",
+    "Exercises/Add Tests and Documentation to Previous Projects.md",
+    "Week 4 - Advanced Topics & Production Scripting/Day 30 - Final Portfolio Project.md",
+    "Week 4 - Advanced Topics & Production Scripting/Day 28 - Cron Integration & Scheduling.md",
+    "Week 4 - Advanced Topics & Production Scripting/Day 29 - Testing & Documentation.md",
+    "Exercises/Implement --dry-run Mode for Testing.md",
+    "Exercises/Create Comprehensive Help Documentation.md",
+    "Exercises/Write Test Suite for Validation Functions.md",
+    "Exercises/Automated Backup System with Rotation.md",
+    "Exercises/Handle Concurrent Execution with Lockfiles.md",
+    "Exercises/Email Notifications for Scheduled Tasks.md",
+    "Exercises/Script for Cron, Absolute Paths, No TTY.md",
+    "Week 4 - Advanced Topics & Production Scripting/Day 27 - Working with JSON & APIs.md",
+    "Week 4 - Advanced Topics & Production Scripting/Day 25 - Script Optimization & Best Practices.md",
+    "Extract and Sort Unique Usernames from /etc",
+    "Extract and Sort Unique Usernames from ",
+    "Calculate Sum",
+    "Return Success",
+    "Script with Different Exit Codes for Success",
+    "Week 4 - Advanced Topics & Production Scripting",
+    "Week 3 - Functions & Text Processing",
+    "Implement Stack Operations (push",
+    "Week 2 - Control Flow & Logic",
+    "Projects"
+  ]
+}
