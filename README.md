@@ -1,0 +1,1 @@
+This is an introductory to intermediate level bash course set over 30 days. You by no means need to follow the daily layout. That being said, this course is generally meant to be accessed on Obsidian as a "vault". Obsidian is farily easy to setup and the website will provide instructions on how to do so(obsidian.com). 
