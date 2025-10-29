@@ -35,7 +35,7 @@ Obsidian will now treat this repository as a vault, letting you easily navigate 
 
 #### 4. Start Learning
 
-You can follow the 30-day schedule or pick and choose lessons as you wish. Each day’s folder includes explanations, commands, and guided exercises to help reinforce your understanding of Bash scripting.
+You can follow the 30-day schedule or pick and choose lessons as you wish. Each day’s folder includes explanations, commands, and guided exercises to help reinforce your understanding of Bash scripting. Please ignore the "Exercise" folder as it is _only_ intended for organization. You will be able to access the exericises as they are meant to be accessed through each daily lesson.
 
 ***
 
