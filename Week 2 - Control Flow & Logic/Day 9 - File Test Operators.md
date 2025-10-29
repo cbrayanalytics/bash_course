@@ -209,8 +209,7 @@ fi
 
 ***
 
-**Exercise 1:** [[Check if File Exists Before Attempting to Read]]
-**Exercise 2:** [[Verify Directory Existence and Create if Missing]]
-**Exercise 3:** [[Compare Modification Times of Two Files]]
-
-**Daily Project:** [[Pre-Deployment Validator]]
+- [ ] **Exercise 1:** [[Check if File Exists Before Attempting to Read]]
+- [ ] **Exercise 2:** [[Verify Directory Existence and Create if Missing]]
+- [ ] **Exercise 3:** [[Compare Modification Times of Two Files]]
+- [ ] **Daily Project:** [[Pre-Deployment Validator]]

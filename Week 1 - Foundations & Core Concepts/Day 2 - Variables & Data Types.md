@@ -83,7 +83,7 @@ echo "Exit status: $?"  # Will be 0 (success)
 
 ***
 
-- [x] **Exercise 1**:  [[Store and Display Variable Types]]
-- [x] **Exercise 2:**  [[Calculate and Display Script Runtime Using Special Variables]]
-- [x] **Exercise 3:** [[Export Variables and Demonstrate Scope Differences]]
-- [x] **Daily Project:** [[Environment Info Script]]
+- [ ] **Exercise 1**:  [[Store and Display Variable Types]]
+- [ ] **Exercise 2:**  [[Calculate and Display Script Runtime Using Special Variables]]
+- [ ] **Exercise 3:** [[Export Variables and Demonstrate Scope Differences]]
+- [ ] **Daily Project:** [[Environment Info Script]]

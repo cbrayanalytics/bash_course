@@ -320,9 +320,8 @@ echo "Success!"
 
 ***
 
-**Exercise 1:** [[Script with Comprehensive Error Checking]]
-**Exercise 2:** [[Implement Trap to Clean Up Temporary Files on Exit]]
-**Exercise 3:** [[Debug Script Using set -x]]
-
-**Daily Project:** [[Robust Installer Script with Error Handling and Rollback]]
+- [ ] **Exercise 1:** [[Script with Comprehensive Error Checking]]
+- [ ] **Exercise 2:** [[Implement Trap to Clean Up Temporary Files on Exit]]
+- [ ] **Exercise 3:** [[Debug Script Using set -x]]
+- [ ] **Daily Project:** [[Robust Installer Script with Error Handling and Rollback]]
 

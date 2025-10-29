@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Week 1 - Foundations & Core Concepts/Day 3 - User Input & Read Command.md",
+                "file": "Week 1 - Foundations & Core Concepts/Day 2 - Variables & Data Types.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 3 - User Input & Read Command"
+              "title": "Day 2 - Variables & Data Types"
+            }
+          },
+          {
+            "id": "20f6fab71b9217c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Week 2 - Control Flow & Logic/Day 13 - Loop Control (break continue).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Day 13 - Loop Control (break continue)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Week 1 - Foundations & Core Concepts/Day 3 - User Input & Read Command.md",
+                "file": "Week 2 - Control Flow & Logic/Day 13 - Loop Control (break continue).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Day 3 - User Input & Read Command"
+              "title": "Backlinks for Day 13 - Loop Control (break continue)"
             }
           },
           {
@@ -113,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Week 1 - Foundations & Core Concepts/Day 3 - User Input & Read Command.md",
+                "file": "Week 2 - Control Flow & Logic/Day 13 - Loop Control (break continue).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Day 3 - User Input & Read Command"
+              "title": "Outgoing links from Day 13 - Loop Control (break continue)"
             }
           },
           {
@@ -142,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Week 1 - Foundations & Core Concepts/Day 3 - User Input & Read Command.md",
+                "file": "Week 2 - Control Flow & Logic/Day 13 - Loop Control (break continue).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Day 3 - User Input & Read Command"
+              "title": "Outline of Day 13 - Loop Control (break continue)"
             }
           }
         ]
@@ -169,34 +184,34 @@
       "bases:Create new base": false
     }
   },
-  "active": "9b7826460226b1c4",
+  "active": "20f6fab71b9217c2",
   "lastOpenFiles": [
-    "Week 1 - Foundations & Core Concepts/Day 2 - Variables & Data Types.md",
-    "Exercises/Environment Info Script.md",
-    "Week 1 - Foundations & Core Concepts/Day 1 - Environment Setup & First Script.md",
-    "Exercises/Export Variables and Demonstrate Scope Differences.md",
-    "Exercises/Calculate and Display Script Runtime Using Special Variables.md",
-    "Exercises/Store and Display Variable Types.md",
-    "Exercises/System Welcome Banner.md",
-    "Exercises/system information.md",
-    "Exercises/add to path.md",
-    "Exercises/hello world.md",
-    "Improvements.md",
-    "Exercises/Error Conditions.md",
-    "Exercises/Code Search Tool.md",
-    "Exercises/Add Tests and Documentation to Previous Projects.md",
+    "Week 3 - Functions & Text Processing/Week 3 - Portfolio Project.md",
     "Week 4 - Advanced Topics & Production Scripting/Day 30 - Final Portfolio Project.md",
-    "Week 4 - Advanced Topics & Production Scripting/Day 28 - Cron Integration & Scheduling.md",
-    "Week 4 - Advanced Topics & Production Scripting/Day 29 - Testing & Documentation.md",
-    "Exercises/Implement --dry-run Mode for Testing.md",
-    "Exercises/Create Comprehensive Help Documentation.md",
-    "Exercises/Write Test Suite for Validation Functions.md",
-    "Exercises/Automated Backup System with Rotation.md",
-    "Exercises/Handle Concurrent Execution with Lockfiles.md",
-    "Exercises/Email Notifications for Scheduled Tasks.md",
-    "Exercises/Script for Cron, Absolute Paths, No TTY.md",
-    "Week 4 - Advanced Topics & Production Scripting/Day 27 - Working with JSON & APIs.md",
     "Week 4 - Advanced Topics & Production Scripting/Day 25 - Script Optimization & Best Practices.md",
+    "Week 4 - Advanced Topics & Production Scripting/Day 29 - Testing & Documentation.md",
+    "Week 4 - Advanced Topics & Production Scripting/Day 28 - Cron Integration & Scheduling.md",
+    "Week 4 - Advanced Topics & Production Scripting/Day 26 - Command-Line Parsing & Getopts.md",
+    "Week 4 - Advanced Topics & Production Scripting/Day 27 - Working with JSON & APIs.md",
+    "Exercises/Extract Specific Fields from Complex JSON.md",
+    "Exercises/Weather Reporting Tool.md",
+    "Exercises/POST Data to API Endpoint.md",
+    "Exercises/Fetch and Parse JSON from Public API.md",
+    "Week 4 - Advanced Topics & Production Scripting/Day 24 - Here Documents & Here Strings.md",
+    "Week 4 - Advanced Topics & Production Scripting/Day 23 - Signal Handling & Process Management.md",
+    "Week 4 - Advanced Topics & Production Scripting/Day 22 - Error Handling & Debugging.md",
+    "Week 3 - Functions & Text Processing/Day 21 - Cut, Sort, Uniq, and Pipes.md",
+    "Week 3 - Functions & Text Processing/Day 20 - Awk for Text Processing.md",
+    "Week 3 - Functions & Text Processing/Day 19 - Sed for Stream Editing.md",
+    "Week 3 - Functions & Text Processing/Day 18 - Grep & Text Searching.md",
+    "Week 3 - Functions & Text Processing/Day 17 - Regular Expressions Basics.md",
+    "Week 3 - Functions & Text Processing/Day 16 - Function Arguments & Return Values.md",
+    "Week 3 - Functions & Text Processing/Day 15 - Function Basics.md",
+    "Week 2 - Control Flow & Logic/Week 2 - Portfolio Project.md",
+    "Week 2 - Control Flow & Logic/Day 14 - Exit Codes & Return Values.md",
+    "Week 2 - Control Flow & Logic/Day 13 - Loop Control (break continue).md",
+    "Week 2 - Control Flow & Logic/Day 12 - While & Until Loops.md",
+    "Week 2 - Control Flow & Logic/Day 11 - For Loops.md",
     "Extract and Sort Unique Usernames from /etc",
     "Extract and Sort Unique Usernames from ",
     "Calculate Sum",

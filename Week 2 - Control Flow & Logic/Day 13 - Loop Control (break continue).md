@@ -297,8 +297,7 @@ done
 
 ***
 
-**Exercise 1:** [[Find First Even Number in Array and Exit Loop]]
-**Exercise 2:** [[Skip Processing of Hidden Files Using Continue]]
-**Exercise 3:** [[Nested Loop Control with Labeled Breaks]]
-
-**Daily Project:  [[File Searcher with Configurable Stop Behavior]]
+- [ ] **Exercise 1:** [[Find First Even Number in Array and Exit Loop]]
+- [ ] **Exercise 2:** [[Skip Processing of Hidden Files Using Continue]]
+- [ ] **Exercise 3:** [[Nested Loop Control with Labeled Breaks]]
+- [ ] **Daily Project:  [[File Searcher with Configurable Stop Behavior]]

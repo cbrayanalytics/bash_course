@@ -196,8 +196,7 @@ fi
 
 ***
 
-**Exercise 1:** [[Script That Checks if Number is Positive, Negative, or Zero]]
-**Exercise 2:** [[Validate User Age Input (Numeric, Within Range)]]
-**Exercise 3:** [[Check Multiple Conditions with Logical Operators]]
-
-**Daily Project:** [[File Permission Checker]]
+- [ ] **Exercise 1:** [[Script That Checks if Number is Positive, Negative, or Zero]]
+- [ ] **Exercise 2:** [[Validate User Age Input (Numeric, Within Range)]]
+- [ ] **Exercise 3:** [[Check Multiple Conditions with Logical Operators]]
+- [ ] **Daily Project:** [[File Permission Checker]]

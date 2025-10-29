@@ -284,10 +284,9 @@ awk '!seen[$0]++' file.txt
 
 ***
 
-**Exercise 1:** [[Extract Specific Columns from CSV File]]
-**Exercise 2:** [[Average of Numeric Column]]
-**Exercise 3:** [[Filter Rows Based on Conditions]]
-
-**Daily Project:** [[System Resource Analyzer]]
+- [ ] **Exercise 1:** [[Extract Specific Columns from CSV File]]
+- [ ] **Exercise 2:** [[Average of Numeric Column]]
+- [ ] **Exercise 3:** [[Filter Rows Based on Conditions]]
+- [ ] **Daily Project:** [[System Resource Analyzer]]
 
 

@@ -337,8 +337,7 @@ fi
 
 ***
 
-**Exercise 1:** [[Error Conditions]]
-**Exercise 2:** [[Check Exit Codes of External Commands and Respond Accordingly]]
-**Exercise 3:** [[Chain Commands with AND and OR Operators]]
-
-**Daily Project:** [[Comprehensive Validation Script]]
+- [ ] **Exercise 1:** [[Error Conditions]]
+- [ ] **Exercise 2:** [[Check Exit Codes of External Commands and Respond Accordingly]]
+- [ ] **Exercise 3:** [[Chain Commands with AND and OR Operators]]
+- [ ] **Daily Project:** [[Comprehensive Validation Script]]

@@ -290,8 +290,7 @@ done
 
 ***
 
-**Exercise 1:** [[Print Numbers 1-20 with Loop]]
-**Exercise 2:** [[Iterate Through Files in Directory with Specific Extension]]
-**Exercise 3:** [[Nested Loops to Create Multiplication Table]]
-
-**Daily Project:** [[Batch File Renamer]]
+- [ ] **Exercise 1:** [[Print Numbers 1-20 with Loop]]
+- [ ] **Exercise 2:** [[Iterate Through Files in Directory with Specific Extension]]
+- [ ] **Exercise 3:** [[Nested Loops to Create Multiplication Table]]
+- [ ] **Daily Project:** [[Batch File Renamer]]

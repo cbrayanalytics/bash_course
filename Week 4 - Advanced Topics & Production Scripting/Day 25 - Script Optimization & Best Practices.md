@@ -290,10 +290,9 @@ grep -c "pattern" file.txt
 
 ***
 
-**Exercise 1:** [[Optimize Slow Script by Reducing Command Spawning]]
-**Exercise 2:** [[Use Parameter Expansion Instead of External Commands]]
-**Exercise 3:** [[Implement Readonly Constants for Configuration]]
-
-**Daily Project:** [[Refactor Previous Projects with Optimization]]
+- [ ] **Exercise 1:** [[Optimize Slow Script by Reducing Command Spawning]]
+- [ ] **Exercise 2:** [[Use Parameter Expansion Instead of External Commands]]
+- [ ] **Exercise 3:** [[Implement Readonly Constants for Configuration]]
+- [ ] **Daily Project:** [[Refactor Previous Projects with Optimization]]
 
 

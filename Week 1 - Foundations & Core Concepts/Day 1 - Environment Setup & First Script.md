@@ -65,7 +65,7 @@ chmod +x hello.sh
 
 ***
 
-- [x] **Exercise 1:**  [[hello world]]
-- [x] **Exercise 2:**  [[system information]]
-- [x] **Exercise 3:**  [[add to path]]
-- [x] **Daily Project:** [[System Welcome Banner]]
+- [ ] **Exercise 1:**  [[hello world]]
+- [ ] **Exercise 2:**  [[system information]]
+- [ ] **Exercise 3:**  [[add to path]]
+- [ ] **Daily Project:** [[System Welcome Banner]]

@@ -258,8 +258,7 @@ fi
 
 ***
 
-**Exercise 1:** [[Match Email Pattern in String]]
-**Exercise 2:** [[Validate Phone Number Formats]]
-**Exercise 3:** [[Extract URLs from Text]]
-
-**Daily Project:** [[Log Parser]]
+- [ ] **Exercise 1:** [[Match Email Pattern in String]]
+- [ ] **Exercise 2:** [[Validate Phone Number Formats]]
+- [ ] **Exercise 3:** [[Extract URLs from Text]]
+- [ ] **Daily Project:** [[Log Parser]]

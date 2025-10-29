@@ -90,8 +90,7 @@ mail -s "Backup Report" user@example.com < /tmp/backup.log
 
 ***
 
-**Exercise 1:** [[Script for Cron, Absolute Paths, No TTY]]
-**Exercise 2:** [[Email Notifications for Scheduled Tasks]]
-**Exercise 3:** [[Handle Concurrent Execution with Lockfiles]]
-
-**Daily Project:** [[Automated Backup System with Rotation]]
+- [ ] **Exercise 1:** [[Script for Cron, Absolute Paths, No TTY]]
+- [ ] **Exercise 2:** [[Email Notifications for Scheduled Tasks]]
+- [ ] **Exercise 3:** [[Handle Concurrent Execution with Lockfiles]]
+- [ ] **Daily Project:** [[Automated Backup System with Rotation]]

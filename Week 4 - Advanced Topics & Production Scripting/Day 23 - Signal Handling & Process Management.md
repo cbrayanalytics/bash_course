@@ -278,10 +278,9 @@ monitor_process $pid
 
 ***
 
-**Exercise 1:** [[Handle Ctrl+C Gracefully with Cleanup]]
-**Exercise 2:** [[Run Background Processes and Wait for Completion]]
-**Exercise 3:** [[Script That Monitors and Restarts Failed Processes]]
-
-**Daily Project:** [[Process Supervisor]]
+- [ ] **Exercise 1:** [[Handle Ctrl+C Gracefully with Cleanup]]
+- [ ] **Exercise 2:** [[Run Background Processes and Wait for Completion]]
+- [ ] **Exercise 3:** [[Script That Monitors and Restarts Failed Processes]]
+- [ ] **Daily Project:** [[Process Supervisor]]
 
 

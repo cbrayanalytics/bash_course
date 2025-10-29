@@ -296,8 +296,7 @@ done
 
 ***
 
-**Exercise 1:** [[Counter Script Using While Loop]]
-**Exercise 2:** [[Read and Process File Contents Line-by-Line]]
-**Exercise 3:** [[Menu System with Until Loop]]
-
-**Daily Project:** [[Log File Monitor]]
+- [ ] **Exercise 1:** [[Counter Script Using While Loop]]
+- [ ] **Exercise 2:** [[Read and Process File Contents Line-by-Line]]
+- [ ] **Exercise 3:** [[Menu System with Until Loop]]
+- [ ] **Daily Project:** [[Log File Monitor]]

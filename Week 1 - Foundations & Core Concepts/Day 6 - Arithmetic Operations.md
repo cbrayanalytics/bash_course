@@ -129,9 +129,8 @@ echo "${mb}MB"  # Output: 1.00MB
 
 ***
 
-**Exercise 1:** [[Calculator Script for Basic Operations]]
-**Exercise 2:** [[Perform Modulo and Exponentiation Operations]]
-**Exercise 3:** [[Floating-Point Calculations Using bc]]
-
-**Daily Project:** [[Disk Space Calculator with Unit Conversion]]
+- [ ] **Exercise 1:** [[Calculator Script for Basic Operations]]
+- [ ] **Exercise 2:** [[Perform Modulo and Exponentiation Operations]]
+- [ ] **Exercise 3:** [[Floating-Point Calculations Using bc]]
+- [ ] **Daily Project:** [[Disk Space Calculator with Unit Conversion]]
 

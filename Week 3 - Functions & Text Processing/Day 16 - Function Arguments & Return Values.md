@@ -331,9 +331,8 @@ fi
 
 ***
 
-**Exercise 1:** [[Function That Calculates Area of Rectangle]]
-**Exercise 2:** [[Return Success Failure Codes from Functions]]
-**Exercise 3:** [[Capture and Use Function Output in Variables]]
-
-**Daily Projects:** [[Validation Library]]
+- [ ] **Exercise 1:** [[Function That Calculates Area of Rectangle]]
+- [ ] **Exercise 2:** [[Return Success Failure Codes from Functions]]
+- [ ] **Exercise 3:** [[Capture and Use Function Output in Variables]]
+- [ ] **Daily Projects:** [[Validation Library]]
 

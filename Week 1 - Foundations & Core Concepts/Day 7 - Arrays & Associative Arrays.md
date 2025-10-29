@@ -186,9 +186,8 @@ conn_string="${database[user]}@${database[host]}:${database[port]}/${database[na
 
 ***
 
-**Exercise 1:** [[Store and Loop Through a List of Filenames]]
-**Exercise 2:** [[Implement Stack Operations (pushpop) Using Arrays]]
-**Exercise 3:** [[Create Associative Array for Key-Value Configuration]]
-
-**Daily Project:** [[Student Grade Tracker with Associative Arrays]]
+- [ ] **Exercise 1:** [[Store and Loop Through a List of Filenames]]
+- [ ] **Exercise 2:** [[Implement Stack Operations (pushpop) Using Arrays]]
+- [ ] **Exercise 3:** [[Create Associative Array for Key-Value Configuration]]
+- [ ] **Daily Project:** [[Student Grade Tracker with Associative Arrays]]
 

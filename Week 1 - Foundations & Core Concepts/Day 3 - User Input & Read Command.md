@@ -114,9 +114,8 @@ echo "You entered: $REPLY"
 
 ***
 
-**Exercise 1:** [[Interactive Script That Asks for User Details]]
-**Exercise 2:** [[Password Input Script Using Silent Read]]
-**Exercise 3:** [[Timed Input with Timeout Handling]]
-
-**Daily Project:** [[Interactive System Configuration Wizard]]
+- [ ] **Exercise 1:** [[Interactive Script That Asks for User Details]]
+- [ ] **Exercise 2:** [[Password Input Script Using Silent Read]]
+- [ ] **Exercise 3:** [[Timed Input with Timeout Handling]]
+- [ ] **Daily Project:** [[Interactive System Configuration Wizard]]
 

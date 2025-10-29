@@ -217,8 +217,7 @@ sort file.txt | uniq -d
 
 ***
 
-**Exercise 1:** [[Extract and Sort Unique Usernames from etc passwd]]
-**Exercise 2:** [[Pipeline to Find Top 10 Most Common Words]]
-**Exercise 3:** [[Complex Pipeline Combining Multiple Tools]]
-
-**Daily Project:** [[Web Server Log Analyzer]]
+- [ ] **Exercise 1:** [[Extract and Sort Unique Usernames from etc passwd]]
+- [ ] **Exercise 2:** [[Pipeline to Find Top 10 Most Common Words]]
+- [ ] **Exercise 3:** [[Complex Pipeline Combining Multiple Tools]]
+- [ ] **Daily Project:** [[Web Server Log Analyzer]]

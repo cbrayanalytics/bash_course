@@ -342,9 +342,8 @@ fi
 
 ***
 
-**Exercise 1:** [[Create Greeting Function That Accepts Name Parameter]]
-**Exercise 2:** [[Math Functions Library (Add, Subtract, Multiply, Divide)]]
-**Exercise 3:** [[Demonstrate Global vs Local Variable Scope]]
-
-**Daily Project:** [[Logging Utility with Different Log Levels]]
+- [ ] **Exercise 1:** [[Create Greeting Function That Accepts Name Parameter]]
+- [ ] **Exercise 2:** [[Math Functions Library (Add, Subtract, Multiply, Divide)]]
+- [ ] **Exercise 3:** [[Demonstrate Global vs Local Variable Scope]]
+- [ ] **Daily Project:** [[Logging Utility with Different Log Levels]]
 

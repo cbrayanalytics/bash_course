@@ -125,9 +125,8 @@ directory=${fullpath%/*}        # /home/user/documents
 
 ***
 
-**Exercise 1:** [[Extract Filename and Extension from Full Path]]
-**Exercise 2:** [[Lowercase]]
-**Exercise 3:** [[Replace Text Patterns Within Strings]]
-
-**Daily Project:** [[Filename Sanitizer]]
+- [ ] **Exercise 1:** [[Extract Filename and Extension from Full Path]]
+- [ ] **Exercise 2:** [[Lowercase]]
+- [ ] **Exercise 3:** [[Replace Text Patterns Within Strings]]
+- [ ] **Daily Project:** [[Filename Sanitizer]]
 

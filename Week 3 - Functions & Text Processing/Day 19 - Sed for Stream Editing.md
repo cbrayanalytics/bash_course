@@ -270,9 +270,8 @@ sed -n '/START/,/END/p' file.txt
 
 ***
 
-**Exercise 1:** [[Replace All Occurrences of Word in File]]
-**Exercise 2:** [[Delete Lines Matching Pattern]]
-**Exercise 3:** [[Edit Specific Line Ranges]]
-
-**Daily Project:** [[Configuration File Updater]]
+- [ ] **Exercise 1:** [[Replace All Occurrences of Word in File]]
+- [ ] **Exercise 2:** [[Delete Lines Matching Pattern]]
+- [ ] **Exercise 3:** [[Edit Specific Line Ranges]]
+- [ ] **Daily Project:** [[Configuration File Updater]]
 

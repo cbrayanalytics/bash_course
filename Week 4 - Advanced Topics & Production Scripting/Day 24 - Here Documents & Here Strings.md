@@ -254,8 +254,7 @@ EOF
 
 ***
 
-**Exercise 1:** [[Generate Multi-Line Configuration File]]
-**Exercise 2:** [[Create Email Body with Variable Substitution]]
-**Exercise 3:** [[Pass Multi-Line Input to Commands]]
-
-**Daily Project:** [[HTML Report Generator]]
+- [ ] **Exercise 1:** [[Generate Multi-Line Configuration File]]
+- [ ] **Exercise 2:** [[Create Email Body with Variable Substitution]]
+- [ ] **Exercise 3:** [[Pass Multi-Line Input to Commands]]
+- [ ] **Daily Project:** [[HTML Report Generator]]

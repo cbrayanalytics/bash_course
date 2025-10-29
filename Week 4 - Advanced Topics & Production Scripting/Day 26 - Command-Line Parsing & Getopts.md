@@ -281,8 +281,7 @@ done
 
 ***
 
-**Exercise 1:** [[Script with -h, -v , -f]]
-**Exercise 2:** [[Handle Required vs Optional Arguments]]
-**Exercise 3:** [[Implement Long Option Equivalents Manually]]
-
-**Daily Project:** [[Backup Utility with Comprehensive Option Parsing]]
+- [ ] **Exercise 1:** [[Script with -h, -v , -f]]
+- [ ] **Exercise 2:** [[Handle Required vs Optional Arguments]]
+- [ ] **Exercise 3:** [[Implement Long Option Equivalents Manually]]
+- [ ] **Daily Project:** [[Backup Utility with Comprehensive Option Parsing]]

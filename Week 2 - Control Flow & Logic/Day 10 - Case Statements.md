@@ -297,8 +297,7 @@ esac
 
 ***
 
-**Exercise 1:** [[Menu-Driven Script with 4 Options]]
-**Exercise 2:** [[File Type Identifier Based on Extension]]
-**Exercise 3:** [[Multi-Pattern Matching]]
-
-**Daily Project:** [[Service Manager Script]]
+- [ ] **Exercise 1:** [[Menu-Driven Script with 4 Options]]
+- [ ] **Exercise 2:** [[File Type Identifier Based on Extension]]
+- [ ] **Exercise 3:** [[Multi-Pattern Matching]]
+- [ ] **Daily Project:** [[Service Manager Script]]

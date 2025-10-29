@@ -239,10 +239,9 @@ execute rm -rf /tmp/old_data
 
 ***
 
-**Exercise 1:** [[Write Test Suite for Validation Functions]]
-**Exercise 2:** [[Create Comprehensive Help Documentation]]
-**Exercise 3:** [[Implement --dry-run Mode for Testing]]
-
-**Daily Project:** [[Add Tests and Documentation to Previous Projects]]
+- [ ] **Exercise 1:** [[Write Test Suite for Validation Functions]]
+- [ ] **Exercise 2:** [[Create Comprehensive Help Documentation]]
+- [ ] **Exercise 3:** [[Implement --dry-run Mode for Testing]]
+- [ ] **Daily Project:** [[Add Tests and Documentation to Previous Projects]]
 
 

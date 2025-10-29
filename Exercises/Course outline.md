@@ -1,6 +1,3 @@
-```
-Based on your preferences for advanced-beginner to intermediate content with daily lessons, exercises, projects, and weekly portfolio projects, here's a comprehensive 30-day Bash scripting course tailored to your learning style:
-
 ## 30-Day Bash Scripting Course
 
 This course is designed for users with basic Linux familiarity who want to master Bash scripting for system administration and automation tasks[1][2].

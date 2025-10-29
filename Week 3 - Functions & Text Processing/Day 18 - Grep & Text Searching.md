@@ -291,8 +291,7 @@ grep -E "error|warning|critical" logfile.txt
 
 ***
 
-**Exercise 1:** [[Search Log Files for Error Messages]]
-**Exercise 2:** [[Recursive Search Through Directory Tree]]
-**Exercise 3:** [[Count Occurrences of Pattern Across Multiple Files]]
-
-**Daily Project:** [[Code Search Tool]]
+- [ ] **Exercise 1:** [[Search Log Files for Error Messages]]
+- [ ] **Exercise 2:** [[Recursive Search Through Directory Tree]]
+- [ ] **Exercise 3:** [[Count Occurrences of Pattern Across Multiple Files]]
+- [ ] **Daily Project:** [[Code Search Tool]]

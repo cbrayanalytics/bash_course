@@ -114,9 +114,8 @@ fi
 
 ***
 
-**Exercise 1:** [[Script That Processes Three Arguments and Displays Them]]
-**Exercise 2:** [[Implement Argument Counting and Validation]]
-**Exercise 3:** [[Use shift to Process Unlimited Arguments]]
-
-**Daily Project:** [[File Backup Script with Arguments and Validation]]
+- [ ] **Exercise 1:** [[Script That Processes Three Arguments and Displays Them]]
+- [ ] **Exercise 2:** [[Implement Argument Counting and Validation]]
+- [ ] **Exercise 3:** [[Use shift to Process Unlimited Arguments]]
+- [ ] **Daily Project:** [[File Backup Script with Arguments and Validation]]
 
