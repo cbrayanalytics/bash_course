@@ -13,7 +13,7 @@ read name
 echo "Hello, $name"
 ```
 
-When executed, the script pauses and waits for user input. After the user types and presses Enter, the input is stored in the variable[3].
+When executed, the script pauses and waits for user input. After the user types and presses Enter, the input is stored in the variable.
 
 ***
 ## Multiple Variables
@@ -23,7 +23,7 @@ read first_name last_name
 echo "Hello, $first_name $last_name"
 ```
 
-If the user enters more words than variables, the extra words go into the last variable. If fewer words are entered, remaining variables are empty[1].
+If the user enters more words than variables, the extra words go into the last variable. If fewer words are entered, remaining variables are empty.
 
 ## read Command Options
 The `read` command supports several options to control input behavior[1][6]:

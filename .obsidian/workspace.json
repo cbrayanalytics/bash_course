@@ -4,39 +4,66 @@
     "type": "split",
     "children": [
       {
-        "id": "cd74f91fc2c69f0e",
-        "type": "tabs",
+        "id": "6ea23448bbd20791",
+        "type": "split",
         "children": [
           {
-            "id": "9b7826460226b1c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Week 1 - Foundations & Core Concepts/Day 2 - Variables & Data Types.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Day 2 - Variables & Data Types"
-            }
+            "id": "cd74f91fc2c69f0e",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "76e440959e47d58d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Your-Scripts/Bash Scripting Template.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Bash Scripting Template"
+                }
+              }
+            ]
           },
           {
-            "id": "20f6fab71b9217c2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Your-Scripts/README.md",
-                "mode": "source",
-                "source": false
+            "id": "e49742dc495fb5d5",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "6e205ac55b5695b4",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Resources/Exercises/Interactive Script That Asks for User Details.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Interactive Script That Asks for User Details"
+                }
               },
-              "icon": "lucide-file",
-              "title": "README"
-            }
+              {
+                "id": "e34f032891b1f725",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Week 1 - Foundations & Core Concepts/Day 3 - User Input & Read Command.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Day 3 - User Input & Read Command"
+                }
+              }
+            ],
+            "currentTab": 1
           }
         ],
-        "currentTab": 1
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -184,11 +211,19 @@
       "bases:Create new base": false
     }
   },
-  "active": "20f6fab71b9217c2",
+  "active": "e34f032891b1f725",
   "lastOpenFiles": [
+    "Your-Scripts/userinfo.sh~",
+    "Your-Scripts/2",
+    "Week 1 - Foundations & Core Concepts/Day 2 - Variables & Data Types.md",
+    "Resources/Exercises/Interactive Script That Asks for User Details.md",
+    "Week 1 - Foundations & Core Concepts/Day 3 - User Input & Read Command.md",
+    "Your-Scripts/Bash Scripting Template.md",
+    "Your-Scripts/userinfo.sh",
     "Week 1 - Foundations & Core Concepts/Day 1 - Environment Setup & First Script.md",
-    "Resources/Exercises/hello world.md",
     "Your-Scripts/README.md",
+    "Resources/Exercises/Environment Info Script.md",
+    "Resources/Exercises/hello world.md",
     "Resources/Templates",
     "Resources/References",
     "Resources/References.md",
@@ -211,16 +246,8 @@
     "Week 4 - Advanced Topics & Production Scripting/Day 23 - Signal Handling & Process Management.md",
     "Week 4 - Advanced Topics & Production Scripting/Day 22 - Error Handling & Debugging.md",
     "Week 3 - Functions & Text Processing/Day 21 - Cut, Sort, Uniq, and Pipes.md",
-    "Week 3 - Functions & Text Processing/Day 20 - Awk for Text Processing.md",
-    "Week 3 - Functions & Text Processing/Day 19 - Sed for Stream Editing.md",
-    "Week 3 - Functions & Text Processing/Day 18 - Grep & Text Searching.md",
-    "Week 3 - Functions & Text Processing/Day 17 - Regular Expressions Basics.md",
-    "Week 3 - Functions & Text Processing/Day 16 - Function Arguments & Return Values.md",
-    "Week 3 - Functions & Text Processing/Day 15 - Function Basics.md",
     "Extract and Sort Unique Usernames from /etc",
     "Extract and Sort Unique Usernames from ",
-    "Calculate Sum",
-    "Return Success",
-    "Script with Different Exit Codes for Success"
+    "Calculate Sum"
   ]
 }

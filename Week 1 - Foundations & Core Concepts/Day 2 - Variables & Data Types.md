@@ -49,7 +49,7 @@ function my_function() {
 # local_var not accessible here
 ```
 
-**Export variables** to make them available to child processes[9]:
+**Export variables** to make them available to child processes:
 ```bash
 export MY_VAR="value"
 ./another_script.sh  # Can access MY_VAR
