@@ -4,95 +4,52 @@
     "type": "split",
     "children": [
       {
-        "id": "6ea23448bbd20791",
-        "type": "split",
+        "id": "cd74f91fc2c69f0e",
+        "type": "tabs",
         "children": [
           {
-            "id": "cd74f91fc2c69f0e",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "76e440959e47d58d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Resources/Templates/Scripting Template Overview.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Scripting Template Overview"
-                }
+            "id": "9b7826460226b1c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Resources/Exercises/Use shift to Process Unlimited Arguments.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "5a14c99f142169ff",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Resources/Templates/Scripting Template Overview.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Scripting Template Overview"
-                }
-              },
-              {
-                "id": "fa9d89f7092f549c",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Resources/References/Bash Scripting Best Practices.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Bash Scripting Best Practices"
-                }
-              }
-            ],
-            "currentTab": 2
+              "icon": "lucide-file",
+              "title": "Use shift to Process Unlimited Arguments"
+            }
           },
           {
-            "id": "e49742dc495fb5d5",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "6e205ac55b5695b4",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Resources/Exercises/Interactive Script That Asks for User Details.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Interactive Script That Asks for User Details"
-                }
+            "id": "74de8207c2936ec5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Resources/Templates/Minimal Template.md",
+                "mode": "source",
+                "source": false
               },
-              {
-                "id": "e34f032891b1f725",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Resources/Exercises/Password Input Script Using Silent Read.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Password Input Script Using Silent Read"
-                }
-              }
-            ],
-            "currentTab": 1
+              "icon": "lucide-file",
+              "title": "Minimal Template"
+            }
+          },
+          {
+            "id": "bf556997726a7f79",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Week 1 - Foundations & Core Concepts/Day 3 - User Input & Read Command.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Day 3 - User Input & Read Command"
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -149,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283
+    "width": 283,
+    "collapsed": true
   },
   "right": {
     "id": "b5bb826d70a76c75",
@@ -240,43 +198,43 @@
       "bases:Create new base": false
     }
   },
-  "active": "fa9d89f7092f549c",
+  "active": "9b7826460226b1c4",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Resources/References/Bash Scripting Best Practices.md",
-    "Resources/Templates/Professional Template.md",
-    "Resources/Templates/Scripting Template Overview.md",
-    "Untitled 1.md",
+    "Your-Scripts/EOF",
+    "Your-Scripts/process_all.sh",
+    "Week 1 - Foundations & Core Concepts/Day 4 - Command-Line Arguments.md",
+    "Resources/Exercises/Implement Argument Counting and Validation.md",
     "Resources/Templates/Minimal Template.md",
-    "Resources/Templates/Super Minimal Template.md",
-    "Resources/Templates/Template with Error Handling.md",
-    "Resources/Templates/Template with Logging.md",
-    "Resources/Exercises/Password Input Script Using Silent Read.md",
-    "Your-Scripts/password.sh",
     "Week 1 - Foundations & Core Concepts/Day 3 - User Input & Read Command.md",
-    "Your-Scripts/userinfo.sh~",
-    "Your-Scripts/2",
+    "Your-Scripts/args.sh",
+    "Resources/Exercises/Script That Processes Three Arguments and Displays Them.md",
+    "Resources/Exercises/Interactive System Configuration Wizard.md",
+    "Resources/Exercises/Timed Input with Timeout Handling.md",
     "Week 1 - Foundations & Core Concepts/Day 2 - Variables & Data Types.md",
-    "Resources/Exercises/Interactive Script That Asks for User Details.md",
+    "Week 2 - Control Flow & Logic/Day 8 - Conditional Statements.md",
+    "Resources/Exercises/Password Input Script Using Silent Read.md",
+    "Your-Scripts/quiz.sh",
+    "Resources/Templates/Super Minimal Template.md",
+    "Resources/Templates/Scripting Template Overview.md",
+    "Resources/Templates/Template with Error Handling.md",
+    "Resources/Templates/Professional Template.md",
     "Your-Scripts/userinfo.sh",
-    "Week 1 - Foundations & Core Concepts/Day 1 - Environment Setup & First Script.md",
-    "Your-Scripts/README.md",
-    "Resources/Exercises/Environment Info Script.md",
-    "Resources/Exercises/hello world.md",
+    "Your-Scripts/password.sh",
+    "Your-Scripts/2",
+    "Resources/Templates/Template with Logging.md",
     "Resources/Templates",
+    "Resources/References/Bash Scripting Best Practices.md",
     "Resources/References",
+    "Your-Scripts/README.md",
+    "Exercises/Improvements.md",
+    "Week 1 - Foundations & Core Concepts/Day 1 - Environment Setup & First Script.md",
+    "Resources/Exercises/hello world.md",
     "Resources/References.md",
     "Resources/Cheat-Sheets",
     "Resources",
-    "Your-Scripts",
     "Week 2 - Control Flow & Logic/Day 13 - Loop Control (break continue).md",
     "Week 3 - Functions & Text Processing/Week 3 - Portfolio Project.md",
     "Week 4 - Advanced Topics & Production Scripting/Day 30 - Final Portfolio Project.md",
-    "Week 4 - Advanced Topics & Production Scripting/Day 25 - Script Optimization & Best Practices.md",
-    "Week 4 - Advanced Topics & Production Scripting/Day 29 - Testing & Documentation.md",
-    "Week 4 - Advanced Topics & Production Scripting/Day 28 - Cron Integration & Scheduling.md",
-    "Week 4 - Advanced Topics & Production Scripting/Day 26 - Command-Line Parsing & Getopts.md",
-    "Week 4 - Advanced Topics & Production Scripting/Day 27 - Working with JSON & APIs.md",
-    "Extract and Sort Unique Usernames from /etc"
+    "Week 4 - Advanced Topics & Production Scripting/Day 25 - Script Optimization & Best Practices.md"
   ]
 }

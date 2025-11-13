@@ -56,7 +56,7 @@ echo "All args: $*"
 - `"$@"` expands to: `"arg1" "arg2" "arg3"` (separate strings)
 - `"$*"` expands to: `"arg1 arg2 arg3"` (single string)
 
-Use `"$@"` when you want to preserve individual arguments, especially with spaces[2].
+Use `"$@"` when you want to preserve individual arguments, especially with spaces.
 
 ### The shift Command
 
