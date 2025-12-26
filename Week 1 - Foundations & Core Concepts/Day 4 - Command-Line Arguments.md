@@ -1,5 +1,5 @@
 ## Positional Parameters
-Positional parameters allow your script to accept arguments from the command line[1]. When you run a script like `./script.sh arg1 arg2 arg3`, these arguments are automatically stored in special variables.
+Positional parameters allow your script to accept arguments from the command line. When you run a script like `./script.sh arg1 arg2 arg3`, these arguments are automatically stored in special variables.
 
 **Basic positional parameters:**
 ```bash

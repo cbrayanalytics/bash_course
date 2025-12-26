@@ -4,52 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "cd74f91fc2c69f0e",
+        "id": "d775e3ae78998a48",
         "type": "tabs",
         "children": [
           {
-            "id": "9b7826460226b1c4",
+            "id": "f1a01819376733e4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resources/Exercises/Use shift to Process Unlimited Arguments.md",
+                "file": "Week 1 - Foundations & Core Concepts/Day 5 - String Operations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Use shift to Process Unlimited Arguments"
+              "title": "Day 5 - String Operations"
             }
           },
           {
-            "id": "74de8207c2936ec5",
+            "id": "452bdca81ae18d11",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resources/Templates/Minimal Template.md",
+                "file": "Resources/Exercises/Store and Loop Through a List of Filenames.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Minimal Template"
-            }
-          },
-          {
-            "id": "bf556997726a7f79",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Week 1 - Foundations & Core Concepts/Day 3 - User Input & Read Command.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Day 3 - User Input & Read Command"
+              "title": "Store and Loop Through a List of Filenames"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283,
-    "collapsed": true
+    "width": 283
   },
   "right": {
     "id": "b5bb826d70a76c75",
@@ -198,43 +184,43 @@
       "bases:Create new base": false
     }
   },
-  "active": "9b7826460226b1c4",
+  "active": "452bdca81ae18d11",
   "lastOpenFiles": [
+    "Week 1 - Foundations & Core Concepts/Day 5 - String Operations.md",
+    "Week 1 - Foundations & Core Concepts/Day 7 - Arrays & Associative Arrays.md",
+    "Resources/Exercises/Store and Loop Through a List of Filenames.md",
+    "Resources/Exercises/Disk Space Calculator with Unit Conversion.md",
+    "Week 1 - Foundations & Core Concepts/Day 6 - Arithmetic Operations.md",
+    "Resources/Exercises/Floating-Point Calculations Using bc.md",
+    "Resources/Exercises/Perform Modulo and Exponentiation Operations.md",
+    "Resources/Exercises/Calculator Script for Basic Operations.md",
+    "Resources/Exercises/File Backup Script with Arguments and Validation.md",
+    "Resources/Exercises/Filename Sanitizer.md",
+    "Resources/Exercises/Replace Text Patterns Within Strings.md",
+    "Resources/Exercises/Lowercase.md",
+    "Week 1 - Foundations & Core Concepts/Day 2 - Variables & Data Types.md",
+    "Week 1 - Foundations & Core Concepts/Day 3 - User Input & Read Command.md",
+    "Week 1 - Foundations & Core Concepts/Day 1 - Environment Setup & First Script.md",
+    "Week 1 - Foundations & Core Concepts/Day 4 - Command-Line Arguments.md",
+    "Resources/Exercises/Extract Filename and Extension from Full Path.md",
+    "Resources/Exercises/Implement Argument Counting and Validation.md",
+    "Resources/Exercises/Use shift to Process Unlimited Arguments.md",
+    "Resources/Templates/Minimal Template.md",
+    "Resources/Exercises/Script That Processes Three Arguments and Displays Them.md",
     "Your-Scripts/EOF",
     "Your-Scripts/process_all.sh",
-    "Week 1 - Foundations & Core Concepts/Day 4 - Command-Line Arguments.md",
-    "Resources/Exercises/Implement Argument Counting and Validation.md",
-    "Resources/Templates/Minimal Template.md",
-    "Week 1 - Foundations & Core Concepts/Day 3 - User Input & Read Command.md",
     "Your-Scripts/args.sh",
-    "Resources/Exercises/Script That Processes Three Arguments and Displays Them.md",
     "Resources/Exercises/Interactive System Configuration Wizard.md",
     "Resources/Exercises/Timed Input with Timeout Handling.md",
-    "Week 1 - Foundations & Core Concepts/Day 2 - Variables & Data Types.md",
     "Week 2 - Control Flow & Logic/Day 8 - Conditional Statements.md",
     "Resources/Exercises/Password Input Script Using Silent Read.md",
     "Your-Scripts/quiz.sh",
     "Resources/Templates/Super Minimal Template.md",
-    "Resources/Templates/Scripting Template Overview.md",
-    "Resources/Templates/Template with Error Handling.md",
-    "Resources/Templates/Professional Template.md",
     "Your-Scripts/userinfo.sh",
     "Your-Scripts/password.sh",
     "Your-Scripts/2",
-    "Resources/Templates/Template with Logging.md",
     "Resources/Templates",
-    "Resources/References/Bash Scripting Best Practices.md",
     "Resources/References",
-    "Your-Scripts/README.md",
-    "Exercises/Improvements.md",
-    "Week 1 - Foundations & Core Concepts/Day 1 - Environment Setup & First Script.md",
-    "Resources/Exercises/hello world.md",
-    "Resources/References.md",
-    "Resources/Cheat-Sheets",
-    "Resources",
-    "Week 2 - Control Flow & Logic/Day 13 - Loop Control (break continue).md",
-    "Week 3 - Functions & Text Processing/Week 3 - Portfolio Project.md",
-    "Week 4 - Advanced Topics & Production Scripting/Day 30 - Final Portfolio Project.md",
-    "Week 4 - Advanced Topics & Production Scripting/Day 25 - Script Optimization & Best Practices.md"
+    "Resources/Cheat-Sheets"
   ]
 }
