@@ -27,20 +27,32 @@ Create a script named `file_list.sh` that stores filenames in an array and perfo
 ***
 ## Pseudocode for file_list.sh
 
-```sh
+```bash
 BEGIN file_list.sh
 
+  // ========================================
+  // CONFIGURATION & SETUP
+  // ========================================
+  
+  ENABLE strict error handling:
+    - Exit on any command error
+    - Exit on undefined variable usage
+    - Exit on pipe failure
+  
+  SET internal field separator to newline and tab (for safer parsing)
+  
   // ========================================
   // GLOBAL VARIABLES
   // ========================================
   
-  DECLARE files as array
+  DECLARE files as empty array  # Note: Currently unused in script
   
   // ========================================
   // HELPER FUNCTIONS ⚙️
   // ========================================
   
   FUNCTION display_usage()
+    # Display script usage information
     DISPLAY "Usage: ./file_list.sh [filename1] [filename2] ..."
     DISPLAY ""
     DISPLAY "If no arguments provided, uses default file list."
@@ -48,104 +60,132 @@ BEGIN file_list.sh
     DISPLAY "Examples:"
     DISPLAY "  ./file_list.sh"
     DISPLAY "  ./file_list.sh document.txt report.pdf image.png"
+    DISPLAY ""
   ENDFUNCTION
   
   FUNCTION display_error(message)
-    DISPLAY "✗ Error: " + message
+    # Display formatted error message to stderr
+    DISPLAY "✗ Error: " + message TO stderr
   ENDFUNCTION
   
   // ========================================
   // ARRAY DISPLAY FUNCTIONS 📋
   // ========================================
   
-  FUNCTION display_file_list(files_array)
+  FUNCTION display_file_list(file_array_ref, header_message)
     # Display all filenames with their index numbers
-    DISPLAY "File List:"
-    DISPLAY "----------"
+    DISPLAY blank line
+    DISPLAY header_message
+    DISPLAY "---------"
     
-    FOR each index IN indices of files_array DO
-      DISPLAY "[" + index + "] " + files_array[index]
+    FOR each index IN indices of file_array_ref DO
+      DISPLAY "[" + index + "] " + file_array_ref[index]
     END FOR
     
-    DISPLAY ""
+    DISPLAY blank line
   ENDFUNCTION
   
-  FUNCTION display_file_count(files_array)
-    # Display total count of files
-    SET count to length of files_array
+  FUNCTION display_file_count(file_array_ref)
+    # Display total count of files in array
+    SET count to length of file_array_ref
+    DISPLAY blank line
     DISPLAY "Total files: " + count
   ENDFUNCTION
   
-  FUNCTION display_first_and_last(files_array)
-    # Show the first and last filename
-    SET count to length of files_array
+  FUNCTION display_first_and_last(file_array_ref)
+    # Display first and last filenames in array
+    SET first_file to file_array_ref[0]
+    SET last_file to file_array_ref[last_index]
     
-    IF count is 0 THEN
-      DISPLAY "No files in array"
-      RETURN
-    END IF
-    
-    SET first_file to files_array[0]
-    SET last_index to count - 1
-    SET last_file to files_array[last_index]
-    
+    DISPLAY blank line
     DISPLAY "First file: " + first_file
     DISPLAY "Last file: " + last_file
-    DISPLAY ""
+    DISPLAY blank line
   ENDFUNCTION
   
-  FUNCTION display_file_lengths(files_array)
-    # Loop through and display each filename with its character length
-    DISPLAY "File Lengths:"
+  FUNCTION display_file_lengths(file_array_ref)
+    # Display character length for each filename
+    DISPLAY blank line
+    DISPLAY "File lengths:"
     DISPLAY "-------------"
     
-    FOR each filename IN files_array DO
-      SET length to character count of filename
-      DISPLAY filename + " - " + length + " characters"
+    FOR each file IN file_array_ref DO
+      SET length to character count of file
+      DISPLAY file + " - " + length + " characters"
     END FOR
     
-    DISPLAY ""
+    DISPLAY blank line
   ENDFUNCTION
   
   // ========================================
   // ARRAY MODIFICATION FUNCTIONS ✏️
   // ========================================
   
-  FUNCTION add_file_to_array(files_array_ref, new_filename)
+  FUNCTION add_file_to_array(file_array_ref, new_filename)
     # Add a new filename to the array
+    DISPLAY blank line
     DISPLAY "Adding new file: " + new_filename
     
-    APPEND new_filename to files_array_ref
+    APPEND new_filename to file_array_ref
     
-    SET new_count to length of files_array_ref
+    SET new_count to length of file_array_ref
     DISPLAY "Updated total: " + new_count + " files"
-    DISPLAY ""
+  ENDFUNCTION
+  
+  FUNCTION remove_file_from_array(file_array_ref, filename_to_remove)
+    # Remove specified file from array
+    DECLARE new_array as empty array
+    SET found to false
+    
+    FOR each file IN file_array_ref DO
+      IF file equals filename_to_remove THEN
+        SET found to true
+        CONTINUE to next iteration  # Skip this file
+      END IF
+      
+      APPEND file to new_array
+    END FOR
+    
+    IF found is true THEN
+      SET file_array_ref to new_array
+      DISPLAY "Removed: " + filename_to_remove
+      RETURN success (0)
+    ELSE
+      DISPLAY "File not found: " + filename_to_remove TO stderr
+      RETURN failure (1)
+    END IF
   ENDFUNCTION
   
   // ========================================
-  // BONUS FUNCTIONS 🎁
+  // ARRAY PROCESSING FUNCTIONS 🔄
   // ========================================
   
-  FUNCTION sort_array_alphabetically(files_array)
-    # BONUS: Sort the array alphabetically
+  FUNCTION sort_array_alphabetically(source_array_ref, destination_array_ref)
+    # Sort files alphabetically into new array
+    DISPLAY blank line
     DISPLAY "Sorting files alphabetically..."
-    DISPLAY ""
+    DISPLAY blank line
     
-    # Use built-in sort functionality or implement bubble/quick sort
-    SET sorted_array to sorted version of files_array (ascending order)
-    
-    RETURN sorted_array
+    # Create sorted array by:
+    # 1. Print each element on separate line
+    # 2. Pipe to sort command
+    # 3. Read sorted lines into destination array
+    SET destination_array_ref to sorted version of source_array_ref
   ENDFUNCTION
   
-  FUNCTION filter_by_extension(files_array, extension)
-    # BONUS: Filter files by extension
-    DISPLAY "Filtering files by extension: " + extension
-    DISPLAY "-----------------------------------"
-    
+  FUNCTION filter_by_extension(file_array_ref, extension, verbose_mode)
+    # Filter files by extension and output matches
     DECLARE filtered_array as empty array
     
-    FOR each filename IN files_array DO
-      # Extract extension from filename
+    # Display header if verbose mode enabled
+    IF verbose_mode is "true" THEN
+      DISPLAY blank line
+      DISPLAY "Filtering files by extension: " + extension
+      DISPLAY "-----------------------------------"
+    END IF
+    
+    # Build filtered array
+    FOR each filename IN file_array_ref DO
       IF filename contains "." THEN
         SET file_extension to everything after last "."
         
@@ -155,24 +195,81 @@ BEGIN file_list.sh
       END IF
     END FOR
     
+    # Output results
     IF length of filtered_array is 0 THEN
-      DISPLAY "No files found with extension: " + extension
+      IF verbose_mode is "true" THEN
+        DISPLAY "No files found with extension: " + extension TO stderr
+      END IF
     ELSE
       FOR each file IN filtered_array DO
-        DISPLAY "  - " + file
+        DISPLAY file
       END FOR
     END IF
-    
-    DISPLAY ""
-    RETURN filtered_array
   ENDFUNCTION
   
-  FUNCTION find_longest_filename(files_array)
-    # BONUS: Find the longest filename
+  FUNCTION get_unique_extensions(source_array_ref, destination_extensions_ref)
+    # Extract all unique file extensions from array
+    
+    # Clear destination array
+    SET destination_extensions_ref to empty array
+    
+    FOR each filename IN source_array_ref DO
+      IF filename contains "." THEN
+        SET extension to everything after last "."
+        
+        # Check if extension already exists in array
+        SET found to false
+        FOR each existing_ext IN destination_extensions_ref DO
+          IF existing_ext equals extension THEN
+            SET found to true
+            BREAK loop
+          END IF
+        END FOR
+        
+        # Add extension if not found
+        IF found is false THEN
+          APPEND extension to destination_extensions_ref
+        END IF
+      END IF
+    END FOR
+  ENDFUNCTION
+  
+  // ========================================
+  // SEARCH AND ANALYSIS FUNCTIONS 🔍
+  // ========================================
+  
+  FUNCTION search_files(files_array_ref, matches_ref, search_term)
+    # Search for files containing search term
+    DISPLAY blank line
+    DISPLAY "Searching for: " + search_term
+    DISPLAY "------------------------"
+    
+    FOR each file IN files_array_ref DO
+      IF file contains search_term THEN
+        APPEND file to matches_ref
+        DISPLAY "  ✓ " + file
+      END IF
+    END FOR
+    
+    IF length of matches_ref is 0 THEN
+      DISPLAY "No matches found."
+    END IF
+    
+    DISPLAY blank line
+  ENDFUNCTION
+  
+  FUNCTION find_longest_filename(file_array_ref) RETURNS (filename, length)
+    # Find the filename with most characters
     SET longest to ""
     SET max_length to 0
     
-    FOR each filename IN files_array DO
+    # Handle empty array
+    IF length of file_array_ref is 0 THEN
+      RETURN ("No-File", 0)
+    END IF
+    
+    # Iterate to find longest
+    FOR each filename IN file_array_ref DO
       SET current_length to character count of filename
       
       IF current_length is greater than max_length THEN
@@ -181,19 +278,23 @@ BEGIN file_list.sh
       END IF
     END FOR
     
-    RETURN [longest, max_length]
+    RETURN (longest, max_length)
   ENDFUNCTION
   
-  FUNCTION find_shortest_filename(files_array)
-    # BONUS: Find the shortest filename
-    IF length of files_array is 0 THEN
-      RETURN ["", 0]
+  FUNCTION find_shortest_filename(file_array_ref) RETURNS (filename, length)
+    # Find the filename with least characters
+    
+    # Handle empty array
+    IF length of file_array_ref is 0 THEN
+      RETURN ("No-File", 0)
     END IF
     
-    SET shortest to files_array[0]
+    # Initialize with first element
+    SET shortest to file_array_ref[0]
     SET min_length to character count of shortest
     
-    FOR each filename IN files_array DO
+    # Iterate to find shortest
+    FOR each filename IN file_array_ref DO
       SET current_length to character count of filename
       
       IF current_length is less than min_length THEN
@@ -202,171 +303,132 @@ BEGIN file_list.sh
       END IF
     END FOR
     
-    RETURN [shortest, min_length]
+    RETURN (shortest, min_length)
   ENDFUNCTION
   
-  FUNCTION display_longest_and_shortest(files_array)
-    # BONUS: Display longest and shortest filenames
+  FUNCTION display_longest_and_shortest(file_array_ref)
+    # Display filename length statistics
+    DISPLAY blank line
     DISPLAY "Filename Statistics:"
     DISPLAY "--------------------"
     
-    SET [longest, longest_len] to find_longest_filename(files_array)
-    SET [shortest, shortest_len] to find_shortest_filename(files_array)
+    # Get shortest filename info
+    SET (shortest, shortest_len) to find_shortest_filename(file_array_ref)
     
-    DISPLAY "Longest:  " + longest + " (" + longest_len + " characters)"
+    # Get longest filename info
+    SET (longest, longest_len) to find_longest_filename(file_array_ref)
+    
     DISPLAY "Shortest: " + shortest + " (" + shortest_len + " characters)"
-    DISPLAY ""
+    DISPLAY "Longest: " + longest + " (" + longest_len + " characters)"
+    DISPLAY blank line
   ENDFUNCTION
   
-  FUNCTION get_unique_extensions(files_array)
-    # BONUS: Get list of all unique extensions in array
-    DECLARE extensions as empty array
+  FUNCTION display_files_by_extension(files_array_ref)
+    # Display files grouped by their extensions
+    DECLARE unique_extensions as empty array
     
-    FOR each filename IN files_array DO
-      IF filename contains "." THEN
-        SET extension to everything after last "."
-        
-        # Add to array if not already present
-        IF extension NOT IN extensions THEN
-          APPEND extension to extensions
-        END IF
-      END IF
-    END FOR
+    # Get all unique extensions
+    CALL get_unique_extensions(files_array_ref, unique_extensions)
     
-    RETURN extensions
-  ENDFUNCTION
-  
-  FUNCTION display_files_by_extension(files_array)
-    # BONUS: Group and display files by their extensions
-    SET extensions to get_unique_extensions(files_array)
-    
+    DISPLAY blank line
     DISPLAY "Files Grouped by Extension:"
     DISPLAY "----------------------------"
     
-    FOR each ext IN extensions DO
-      DISPLAY ""
+    FOR each ext IN unique_extensions DO
       DISPLAY "." + ext + " files:"
       
-      SET filtered to filter_by_extension(files_array, ext)
-      # (filter function already displays, or display here)
+      # Get filtered list for this extension
+      DECLARE filtered as empty array
+      SET filtered to filter_by_extension(files_array_ref, ext, "false")
+      
+      # Display each matching file
+      FOR each file IN filtered DO
+        DISPLAY "  - " + file
+      END FOR
+      
+      DISPLAY blank line  # Spacing between groups
     END FOR
-    
-    DISPLAY ""
-  ENDFUNCTION
-  
-  FUNCTION remove_file_from_array(files_array_ref, filename_to_remove)
-    # BONUS: Remove a specific file from array
-    DECLARE new_array as empty array
-    SET found to false
-    
-    FOR each filename IN files_array_ref DO
-      IF filename equals filename_to_remove THEN
-        SET found to true
-        # Skip this file (don't add to new_array)
-      ELSE
-        APPEND filename to new_array
-      END IF
-    END FOR
-    
-    IF found THEN
-      SET files_array_ref to new_array
-      DISPLAY "Removed: " + filename_to_remove
-    ELSE
-      DISPLAY "File not found: " + filename_to_remove
-    END IF
-    
-    RETURN found
-  ENDFUNCTION
-  
-  FUNCTION search_files(files_array, search_term)
-    # BONUS: Search for files containing a search term
-    DISPLAY "Searching for: " + search_term
-    DISPLAY "------------------------"
-    
-    DECLARE matches as empty array
-    
-    FOR each filename IN files_array DO
-      IF filename contains search_term THEN
-        APPEND filename to matches
-        DISPLAY "  ✓ " + filename
-      END IF
-    END FOR
-    
-    IF length of matches is 0 THEN
-      DISPLAY "No matches found"
-    END IF
-    
-    DISPLAY ""
-    RETURN matches
   ENDFUNCTION
   
   // ========================================
   // MAIN LOGIC 🚀
   // ========================================
   
-  FUNCTION main(arguments)
-    # Initialize array
-    IF number of arguments is greater than 0 THEN
-      # BONUS: Accept filenames as command-line arguments
-      SET files to arguments array
+  FUNCTION main(command_line_arguments)
+    # Main execution function
+    DECLARE files_array as empty array
+    
+    # Determine file list source
+    IF number of command_line_arguments is greater than 0 THEN
+      # Use command-line arguments
+      SET files_array to command_line_arguments
+      DISPLAY blank line
       DISPLAY "Using command-line arguments as file list"
-      DISPLAY ""
+      DISPLAY blank line
     ELSE
       # Use default hardcoded list
-      SET files to ["document.txt", "report.pdf", "image.png", "script.sh", "data.csv"]
+      SET files_array to ["document.txt", "report.pdf", "image.png", 
+                          "script.sh", "data.csv"]
     END IF
     
-    # Display initial file list
-    CALL display_file_list(files)
+    // ========================================
+    // CORE FUNCTIONALITY
+    // ========================================
     
-    # Display count
-    CALL display_file_count(files)
+    # Display initial state
+    CALL display_file_list(files_array, "Initial File List:")
+    CALL display_file_count(files_array)
+    CALL display_first_and_last(files_array)
+    CALL display_file_lengths(files_array)
     
-    # Display first and last
-    CALL display_first_and_last(files)
+    # Modify array
+    CALL add_file_to_array(files_array, "backup.tar.gz")
+    CALL display_file_list(files_array, "Updated File List:")
     
-    # Display file lengths
-    CALL display_file_lengths(files)
+    // ========================================
+    // BONUS FEATURES
+    // ========================================
     
-    # Add new file
-    CALL add_file_to_array(files, "backup.tar.gz")
+    # Declare arrays for bonus operations
+    DECLARE sorted_array as empty array
+    DECLARE extensions as empty array
+    DECLARE matches as empty array
     
-    # Display updated list
-    CALL display_file_list(files)
+    # Sort and display
+    CALL sort_array_alphabetically(files_array, sorted_array)
+    CALL display_file_list(sorted_array, "Sorted File List:")
     
-    # ========================================
-    # BONUS FEATURES
-    # ========================================
+    # Display statistics
+    CALL display_longest_and_shortest(files_array)
     
-    # Sort alphabetically
-    SET sorted_files to sort_array_alphabetically(files)
-    DISPLAY "Sorted File List:"
-    DISPLAY "-----------------"
-    CALL display_file_list(sorted_files)
+    # Filter demonstrations
+    CALL filter_by_extension(files_array, "pdf", "true")
+    CALL filter_by_extension(files_array, "txt", "true")
     
-    # Find longest and shortest
-    CALL display_longest_and_shortest(files)
+    # Get and display unique extensions
+    CALL get_unique_extensions(files_array, extensions)
+    IF length of extensions is greater than 0 THEN
+      SET extension_string to join(extensions, ", ")
+      DISPLAY blank line
+      DISPLAY blank line
+      DISPLAY "Unique extensions found: " + extension_string
+      DISPLAY blank line
+    END IF
     
-    # Filter by extension
-    CALL filter_by_extension(files, "pdf")
-    CALL filter_by_extension(files, "txt")
+    # Search functionality demonstration
+    CALL search_files(files_array, matches, "report")
     
-    # Display all unique extensions
-    SET extensions to get_unique_extensions(files)
-    DISPLAY "Unique extensions found: " + join(extensions, ", ")
-    DISPLAY ""
+    # Group files by extension
+    CALL display_files_by_extension(files_array)
     
-    # Search functionality
-    CALL search_files(files, "report")
-    
-    # Display files grouped by extension
-    CALL display_files_by_extension(files)
-    
-    EXIT 0
+    EXIT with success (0)
   ENDFUNCTION
   
-  # Entry point
-  CALL main($@)
+  // ========================================
+  // SCRIPT ENTRY POINT
+  // ========================================
+  
+  CALL main(all command-line arguments)
   
 END file_list.sh
 ```

@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "d775e3ae78998a48",
+        "id": "11d4cfd188914037",
         "type": "tabs",
         "children": [
           {
-            "id": "f1a01819376733e4",
+            "id": "686e3e5ca667b987",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Week 1 - Foundations & Core Concepts/Day 5 - String Operations.md",
+                "file": "Resources/Exercises/Check Multiple Conditions with Logical Operators.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 5 - String Operations"
-            }
-          },
-          {
-            "id": "452bdca81ae18d11",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Resources/Exercises/Store and Loop Through a List of Filenames.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Store and Loop Through a List of Filenames"
+              "title": "Check Multiple Conditions with Logical Operators"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,13 +169,28 @@
       "bases:Create new base": false
     }
   },
-  "active": "452bdca81ae18d11",
+  "active": "686e3e5ca667b987",
   "lastOpenFiles": [
-    "Week 1 - Foundations & Core Concepts/Day 5 - String Operations.md",
+    "Week 2 - Control Flow & Logic/Day 8 - Conditional Statements.md",
+    "Resources/Exercises/Validate User Age Input (Numeric, Within Range).md",
+    "notes/Improvements.md",
+    "Resources/Exercises/Check Multiple Conditions with Logical Operators.md",
+    "Week 1 - Foundations & Core Concepts/Day 6 - Arithmetic Operations.md",
+    "Resources/Exercises/Script That Checks if Number is Positive, Negative, or Zero.md",
+    "Week 1 - Foundations & Core Concepts/Week 1 - Portfolio Project.md",
     "Week 1 - Foundations & Core Concepts/Day 7 - Arrays & Associative Arrays.md",
+    "Resources/Exercises/Student Grade Tracker with Associative Arrays.md",
+    "Resources/Exercises/File Permission Checker.md",
+    "Week 1 - Foundations & Core Concepts/Day 7 - Arrays & Associative Arrays.md~",
+    "templates",
+    "dailies",
+    "notes",
+    "Resources/Exercises/Create Associative Array for Key-Value Configuration.md",
+    "Week 2 - Control Flow & Logic/Week 2 - Portfolio Project.md",
+    "Resources/Exercises/Implement Stack Operations (pushpop) Using Arrays.md",
+    "Week 1 - Foundations & Core Concepts/Day 5 - String Operations.md",
     "Resources/Exercises/Store and Loop Through a List of Filenames.md",
     "Resources/Exercises/Disk Space Calculator with Unit Conversion.md",
-    "Week 1 - Foundations & Core Concepts/Day 6 - Arithmetic Operations.md",
     "Resources/Exercises/Floating-Point Calculations Using bc.md",
     "Resources/Exercises/Perform Modulo and Exponentiation Operations.md",
     "Resources/Exercises/Calculator Script for Basic Operations.md",
@@ -201,26 +201,11 @@
     "Week 1 - Foundations & Core Concepts/Day 2 - Variables & Data Types.md",
     "Week 1 - Foundations & Core Concepts/Day 3 - User Input & Read Command.md",
     "Week 1 - Foundations & Core Concepts/Day 1 - Environment Setup & First Script.md",
-    "Week 1 - Foundations & Core Concepts/Day 4 - Command-Line Arguments.md",
-    "Resources/Exercises/Extract Filename and Extension from Full Path.md",
-    "Resources/Exercises/Implement Argument Counting and Validation.md",
-    "Resources/Exercises/Use shift to Process Unlimited Arguments.md",
-    "Resources/Templates/Minimal Template.md",
-    "Resources/Exercises/Script That Processes Three Arguments and Displays Them.md",
     "Your-Scripts/EOF",
     "Your-Scripts/process_all.sh",
     "Your-Scripts/args.sh",
-    "Resources/Exercises/Interactive System Configuration Wizard.md",
-    "Resources/Exercises/Timed Input with Timeout Handling.md",
-    "Week 2 - Control Flow & Logic/Day 8 - Conditional Statements.md",
-    "Resources/Exercises/Password Input Script Using Silent Read.md",
     "Your-Scripts/quiz.sh",
-    "Resources/Templates/Super Minimal Template.md",
     "Your-Scripts/userinfo.sh",
-    "Your-Scripts/password.sh",
-    "Your-Scripts/2",
-    "Resources/Templates",
-    "Resources/References",
-    "Resources/Cheat-Sheets"
+    "Your-Scripts/password.sh"
   ]
 }

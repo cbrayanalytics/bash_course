@@ -1,8 +1,15 @@
-## Array Basics
+---
+id: Day 7 - Arrays & Associative Arrays
+aliases: []
+tags: []
+---
+
+# Array Basics
 
 Arrays in Bash allow you to store multiple values in a single variable.
 
 **Declaration methods:**
+
 ```bash
 # Method 1: Declare and assign
 files=("file1.txt" "file2.txt" "file3.txt")
@@ -20,7 +27,7 @@ colors=(red green blue yellow)
 files=($(ls *.txt))
 ```
 
-### Accessing Array Elements
+## Accessing Array Elements
 
 ```bash
 fruits=("apple" "banana" "cherry" "date")
@@ -32,12 +39,13 @@ echo ${fruits[-2]}  # cherry (second to last)
 ```
 
 **All elements:**
+
 ```bash
 echo ${fruits[@]}   # All elements as separate words
 echo ${fruits[*]}   # All elements as single string
 ```
 
-### Array Length
+## Array Length
 
 ```bash
 fruits=("apple" "banana" "cherry")
@@ -46,9 +54,10 @@ echo ${#fruits[@]}   # 3 (number of elements)
 echo ${#fruits[0]}   # 5 (length of first element: "apple")
 ```
 
-### Array Iteration
+## Array Iteration
 
 **Loop through all elements:**
+
 ```bash
 for fruit in "${fruits[@]}"; do
     echo "Fruit: $fruit"
@@ -56,6 +65,7 @@ done
 ```
 
 **Loop with index:**
+
 ```bash
 for i in "${!fruits[@]}"; do
     echo "Index $i: ${fruits[$i]}"
@@ -63,21 +73,24 @@ done
 ```
 
 **Traditional for loop:**
+
 ```bash
 for ((i=0; i<${#fruits[@]}; i++)); do
     echo "Element $i: ${fruits[$i]}"
 done
 ```
 
-### Adding and Removing Elements
+## Adding and Removing Elements
 
 **Append elements:**
+
 ```bash
 fruits+=("elderberry")
 fruits[${#fruits[@]}]="fig"
 ```
 
 **Remove elements:**
+
 ```bash
 unset fruits[1]  # Remove element at index 1
 unset fruits     # Remove entire array
@@ -85,7 +98,7 @@ unset fruits     # Remove entire array
 
 **Note:** Removing an element doesn't shift indices; it creates a gap.
 
-### Array Slicing
+## Array Slicing
 
 ```bash
 numbers=(0 1 2 3 4 5 6 7 8 9)
@@ -95,11 +108,12 @@ echo ${numbers[@]:5}     # 5 6 7 8 9 (from index 5 to end)
 echo ${numbers[@]: -3}   # 7 8 9 (last 3 elements)
 ```
 
-### Associative Arrays (Hash Maps/Dictionaries)
+## Associative Arrays (Hash Maps/Dictionaries)
 
 Associative arrays use strings as keys instead of numeric indices.
 
 **Declaration:**
+
 ```bash
 declare -A person
 person[name]="John"
@@ -108,6 +122,7 @@ person[city]="Denver"
 ```
 
 **Alternative declaration:**
+
 ```bash
 declare -A config=(
     [host]="localhost"
@@ -116,7 +131,7 @@ declare -A config=(
 )
 ```
 
-### Accessing Associative Arrays
+## Accessing Associative Arrays
 
 ```bash
 echo ${person[name]}    # John
@@ -132,7 +147,7 @@ echo ${person[@]}       # John 30 Denver
 echo ${#person[@]}      # 3
 ```
 
-### Iterating Associative Arrays
+## Iterating Associative Arrays
 
 ```bash
 # Loop through keys and values
@@ -142,6 +157,7 @@ done
 ```
 
 **Output:**
+
 ```
 name: John
 age: 30
@@ -166,6 +182,7 @@ fi
 ### Practical Examples
 
 **Array of command results:**
+
 ```bash
 # Store list of users
 users=($(cut -d: -f1 /etc/passwd))
@@ -173,6 +190,7 @@ echo "Total users: ${#users[@]}"
 ```
 
 **Configuration storage:**
+
 ```bash
 declare -A database
 database[host]="db.example.com"
@@ -184,10 +202,9 @@ database[user]="admin"
 conn_string="${database[user]}@${database[host]}:${database[port]}/${database[name]}"
 ```
 
-***
+---
 
 - [ ] **Exercise 1:** [[Store and Loop Through a List of Filenames]]
 - [ ] **Exercise 2:** [[Implement Stack Operations (pushpop) Using Arrays]]
 - [ ] **Exercise 3:** [[Create Associative Array for Key-Value Configuration]]
 - [ ] **Daily Project:** [[Student Grade Tracker with Associative Arrays]]
-

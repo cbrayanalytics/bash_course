@@ -1,6 +1,6 @@
 ### Understanding Test Commands
-In Bash, conditional testing is done using the `test` command or its bracket equivalents. There are three forms[1][2]:
-```bash
+In Bash, conditional testing is done using the `test` command or its bracket equivalents. There are three forms:
+``` bash
 test expression          # Original test command
 [ expression ]          # Single bracket (same as test)
 [[ expression ]]        # Double bracket (modern, recommended)
@@ -11,10 +11,10 @@ test expression          # Original test command
 - Correct: `[ 5 -eq 5 ]`
 - Wrong: `[5 -eq 5]`
 
-**Recommended:** Use `[[ ]]` (double brackets) for modern Bash scripting because it's more powerful and handles edge cases better[5].
+**Recommended:** Use `[[ ]]` (double brackets) for modern Bash scripting because it's more powerful and handles edge cases better.
 ### Integer Comparison Operators
-For comparing numbers, use these operators[1][2]:
-```bash
+For comparing numbers, use these operators:
+``` bash
 -eq    # Equal to
 -ne    # Not equal to
 -gt    # Greater than
@@ -24,7 +24,7 @@ For comparing numbers, use these operators[1][2]:
 ```
 
 **Examples:**
-```bash
+``` bash
 num=10
 
 if [[ $num -eq 10 ]]; then
@@ -43,7 +43,7 @@ fi
 **Common mistake:** Don't use `<` or `>` for integer comparison inside `[ ]` - they're for string comparison. Use `-lt` and `-gt` instead.
 ### String Comparison Operators
 For comparing strings:
-```bash
+``` bash
 =  or ==    # Equal to
 !=          # Not equal to
 <           # Less than (alphabetically)
@@ -53,7 +53,7 @@ For comparing strings:
 ```
 
 **Examples:**
-```bash
+``` bash
 name="John"
 
 if [[ $name == "John" ]]; then
@@ -82,7 +82,7 @@ Combine multiple conditions using logical operators:
 ```
 
 **Examples:**
-```bash
+``` bash
 age=25
 name="John"
 
@@ -103,7 +103,7 @@ fi
 ```
 
 **Alternative syntax for multiple conditions:**
-```bash
+``` bash
 # Separate test commands
 if [[ $age -gt 18 ]] && [[ $name == "John" ]]; then
     echo "Adult named John"
@@ -112,7 +112,7 @@ fi
 
 ### if/elif/else Structure
 Complete conditional structure:
-```bash
+``` bash
 if [[ condition1 ]]; then
     # Execute if condition1 is true
 elif [[ condition2 ]]; then
@@ -125,7 +125,7 @@ fi
 ```
 
 **Example:**
-```bash
+``` bash
 score=85
 
 if [[ $score -ge 90 ]]; then
@@ -143,7 +143,7 @@ fi
 
 ### Nested Conditions
 You can nest if statements inside each other:
-```bash
+``` bash
 if [[ $age -ge 18 ]]; then
     echo "You are an adult"
     
@@ -173,7 +173,7 @@ fi
 ```
 ### Practical Examples
 **Check if variable is set:**
-```bash
+``` bash
 if [[ -z "$var" ]]; then
     echo "Variable is not set or empty"
     exit 1
